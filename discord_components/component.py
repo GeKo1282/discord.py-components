@@ -449,7 +449,7 @@ class Button(Component):
 class ActionRow(Component):
     __slots__ = ("_components",)
 
-    def __init__(self, *args: List[Component]):
+    def __init__(self, *args: Component):
         self._components = list(args) if args is not None else []
 
     def disable_components(self) -> List[Component]:
